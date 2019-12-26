@@ -1,0 +1,156 @@
+###############################################################
+###############################################################
+########################## self add files###########################
+*.ini
+*.dbc
+*.stat
+*.png
+*.exe
+########################## self add paths##########################
+# ignore path
+backup/
+doc/
+##########################   keil  CMSIS###############################
+/fireware/Drivers/CMSIS/DSP/
+/fireware/Drivers/CMSIS/Include/
+/fireware/Drivers/CMSIS/Lib/
+/fireware/Drivers/CMSIS/RTOS/
+/fireware/Drivers/CMSIS/RTOS2/
+
+
+###############################################################
+######################MATLAB template###########################
+###############################################################
+# Windows default autosave extension
+*.asv
+
+# OSX / *nix default autosave extension
+*.m~
+
+# Compiled MEX binaries (all platforms)
+*.mex*
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Simulink code generation folders
+slprj/
+sccprj/
+
+# Matlab code generation folders
+codegen/
+*_sldrt_win64/
+*_ert_rtw/
+
+# Simulink autosave extension
+*.autosave
+
+# Simulink cache files
+*.slxc
+
+# Octave session info
+octave-workspace
+###############################################################
+########################## FMX projects###########################
+###############################################################
+_history/
+_recovery/
+Android/
+Win32/
+*.xml
+*.local
+*.identcache
+###############################################################
+########################## Keil projects###########################
+###############################################################
+# A .gitignore for Keil projects.
+# Taken mostly from http://www.keil.com/support/man/docs/uv4/uv4_b_filetypes.htm
+
+# User-specific uVision files
+*.opt
+*.uvopt
+*.uvoptx
+*.uvgui
+*.uvguix.*
+
+# Listing files
+*.cod
+*.htm
+*.i
+*.lst
+*.map
+*.m51
+*.m66
+*.scr  	# define exception below if needed
+
+# Object and HEX files
+*.axf
+*.b[0-3][0-9]
+*.hex
+*.d
+*.crf
+*.elf
+*.hex
+*.h86
+*.lib
+*.obj
+*.o
+*.sbr
+
+# Build files
+*.bat  	# define exception below if needed
+*._ia
+*.__i
+*._ii
+
+# Debugger files
+*.ini  	# define exception below if needed
+
+# Other files
+*.build_log.htm
+*.cdb
+*.dep
+*.ic
+*.lin
+*.lnp
+*.orc
+*.pack 	# define exception below if needed
+*.pdsc 	# define exception below if needed
+*.plg
+*.sct  	# define exception below if needed
+*.sfd
+*.sfr
+
+# Miscellaneous
+*.tra
+*.bin
+*.fed
+*.l1p
+*.l2p
+*.iex
+
+# Windows shortcuts
+*.lnk
+slprj/
+ProcWhlSpds_ert_rtw/
+WheelST3_grt_rtw/
+*.mexw64
+*.exe
+*.asv
+html/
+*.mat
+*.dmr
+FIRM_EAStoneWhlSpd/calcWhlSpdTLE4942_ert_rtw/defines.txt
+FIRM_EAStoneWhlSpd/calcWhlSpdTLE4942_ert_rtw/modelsources.txt
+FIRM_EAStoneWhlSpd/calcWhlSpdTLE4942_ert_rtw/rtw_proj.tmw
+Conf/ESA_DataDictionary for ES Auto Driving_IAM_CE_V1.2.ini
+*.SchDocPreview
+*.PrjPcbStructure
+*.PrjPcb.Zip
+*.PcbDocPreview
+*.rsp
+
