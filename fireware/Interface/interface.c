@@ -254,11 +254,13 @@ void MdlSoftwareStep(void)
 	HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
 	//IFAppMdl_step(); //单步执行函数接口实例
 	
-//	//数据发送函数处理
-//	CANTxData[0] = 1;
-//	CANTxData[0] = 2;
-//	//参数1为ID号，参数2为发送数据的名称，参数3为发送字节数，注意格式
-//	FDCAN1_TxMessage(CAN_ID_TEST_TX1_SEND,CANTxData,FDCAN_DLC_BYTES_2);
+	//数据发送函数处理
+	CANTxData[0] = LFTirPreSenLostErr+(LRTirPreSenLostErr<<1)+(RFTirPreSenLostErr<<2)+(RRTirPreSenLostErr<<3);//SensorError
+	CANTxData[1] = LFTireTempStaus+(LRTireTempStaus<<2)+(RFTireTempStaus<<4)+(RRTireTempStaus<<6);
+	CANTxData[2] = LFTirePreStaus+(LRTirePreStaus<<2)+(RFTirePreStaus<<4)+(RRTirePreStaus<<6);
+	CANTxData[2] = LFTireLeakStaus+(LRTireLeakStaus<<2)+(RFTireLeakStaus<<4)+(RRTireLeakStaus<<6);
+	//参数1为ID号，参数2为发送数据的名称，参数3为发送字节数，注意格式
+	FDCAN1_TxMessage(CAN_ID_STATUS_SEND,CANTxData,FDCAN_DLC_BYTES_4);
 }
 /**
   * @brief CAN滤波器配置

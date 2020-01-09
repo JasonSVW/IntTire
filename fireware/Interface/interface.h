@@ -48,6 +48,7 @@
 //CAN·¢ËÍMESSAGE IDÁÐ±í
 #define CAN_ID_TEST_TX1_SEND 0x020
 #define CAN_ID_TEST_TX2_SEND 0x030
+#define CAN_ID_STATUS_SEND   0x100
 
 struct TireInfo
 {
